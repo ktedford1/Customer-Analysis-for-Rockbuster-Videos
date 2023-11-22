@@ -1,0 +1,24 @@
+WITH top10countries AS (
+    SELECT j.country_id, COUNT(g.customer_id) as customer_count
+    FROM customer g
+    INNER JOIN address h ON g.address_id = h.address_id
+    INNER JOIN city i ON h.city_id = i.city_id
+    INNER JOIN country j ON i.country_id = j.country_id
+    GROUP BY j.country_id
+    ORDER BY customer_count DESC
+    LIMIT 10)
+
+SELECT a.actor_id, a.first_name, a.last_name, sum(amount) AS "total revenue"
+FROM actor a
+INNER JOIN film_actor b ON a.actor_id = b.actor_id
+INNER JOIN film c ON b.film_id = c.film_id
+INNER JOIN inventory d ON c.film_id = d.film_id
+INNER JOIN rental e ON d.inventory_id = e.inventory_id
+INNER JOIN payment f ON e.rental_id = f.rental_id
+INNER JOIN customer g ON e.customer_id = g.customer_id
+INNER JOIN address h ON g.address_id = h.address_id
+INNER JOIN city i ON h.city_id = i.city_id
+INNER JOIN top10countries j ON i.country_id = j.country_id
+GROUP BY a.actor_id, a.first_name, a.last_name
+ORDER BY "total revenue" DESC
+LIMIT 20;
