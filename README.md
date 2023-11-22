@@ -1,4 +1,4 @@
-# Customer Purchase Analysis
+# Customer Analysis: Rockbuster Videos LLC
 
 ![Customer purchase analysis image](https://github.com/ktedford1/Customer-Purchase-Analysis/assets/57229346/7be43379-e6f0-4d78-b473-f0d6e327f69d)
 
