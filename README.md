@@ -1,7 +1,6 @@
 # Customer Purchase Analysis
 
-![Product analysis image](https://github.com/ktedford1/Customer-Purchase-Analysis/assets/57229346/609ac22e-a697-40b3-a201-4491247dcc06)
-
+![Customer purchase analysis image](https://github.com/ktedford1/Customer-Purchase-Analysis/assets/57229346/7be43379-e6f0-4d78-b473-f0d6e327f69d)
 
 
 ## Description
