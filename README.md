@@ -1,4 +1,4 @@
-# SQL_videodb
+# Customer Purchase Analysis
 
 ## Description
 
